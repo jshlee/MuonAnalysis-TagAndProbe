@@ -30,13 +30,9 @@ elif "CMSSW_7_2_" in os.environ['CMSSW_VERSION']:
         '/store/relval/CMSSW_7_2_1/RelValZMM_13/GEN-SIM-RECO/PU50ns_PHYS14_25_V1_Phys14-v1/00000/287B9489-B85E-E411-95DF-02163E00EB3F.root'
         ]
 elif "CMSSW_7_4_" in os.environ['CMSSW_VERSION']:
-    process.GlobalTag.globaltag = cms.string('MCRUN2_74_V7')
+    process.GlobalTag.globaltag = cms.string('MCRUN2_74_V9A')
     process.source.fileNames = [
-        '/store/relval/CMSSW_7_4_0/RelValZMM_13/GEN-SIM-RECO/PU25ns_MCRUN2_74_V7_gs7115_puProd-v1/00000/0005AAE5-49E0-E411-BC50-0025905A6060.root',
-        '/store/relval/CMSSW_7_4_0/RelValZMM_13/GEN-SIM-RECO/PU25ns_MCRUN2_74_V7_gs7115_puProd-v1/00000/32776650-51E0-E411-8B6E-0025905A60B6.root',
-        '/store/relval/CMSSW_7_4_0/RelValZMM_13/GEN-SIM-RECO/PU25ns_MCRUN2_74_V7_gs7115_puProd-v1/00000/44DE1ADA-49E0-E411-9877-0026189437FD.root',
-        '/store/relval/CMSSW_7_4_0/RelValZMM_13/GEN-SIM-RECO/PU25ns_MCRUN2_74_V7_gs7115_puProd-v1/00000/58E0B454-51E0-E411-A51F-0025905A60B6.root',
-        '/store/relval/CMSSW_7_4_0/RelValZMM_13/GEN-SIM-RECO/PU25ns_MCRUN2_74_V7_gs7115_puProd-v1/00000/BAF703DF-49E0-E411-A3FE-0025905A48D8.root',
+        'file:/pnfs/user/jlee/scratch/RunIISpring15DR74/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/AODSIM/Asympt50ns_MCRUN2_74_V9A-v2/0033A97B-8707-E511-9D3B-008CFA1980B8.root',
     ]
 else: raise RuntimeError, "Unknown CMSSW version %s" % os.environ['CMSSW_VERSION']
 
